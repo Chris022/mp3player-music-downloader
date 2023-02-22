@@ -1,4 +1,5 @@
 {
-    "download_folder": "./",
+    "downloaded_folder": "./",
+    "processed_folder":"./out/",
     "yt-dlp-path": "./yt-dlp"
 }

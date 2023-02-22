@@ -7,7 +7,7 @@ def download_song(config,path):
 
     # Get options for running the downloader
     settings = ["-x","--audio-format mp3", "--embed-metadata", "-o \"%(title)s.mp3\""]
-    download_path = config["download_folder"]
+    download_path = config["downloaded_folder"]
 
     # Create the command
     command = [yt_dlp_path," ".join(settings), "--path " + download_path, " https://music.youtube.com/watch?v=ikIcl2q3oP8"]
