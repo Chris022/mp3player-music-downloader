@@ -23,6 +23,9 @@ def download_song(config,path):
 
     new_files = list(set(files_in_folder_after).symmetric_difference(set(files_in_folder_before)))
 
+    # Remove all files from the new files that aren't mp3's
+    new_files = list(filter(lambda name: name[-4:] == ".mp3",new_files))
+
     print(new_files)
 
     return new_files
