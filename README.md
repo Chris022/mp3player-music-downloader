@@ -7,4 +7,4 @@ A script to download music from youtube, automatically convert it to ogg and app
 - python3
 
 ## Installation
-- run: install.sh
+- run: `sudo bash install.bash`
