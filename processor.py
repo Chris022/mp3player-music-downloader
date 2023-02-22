@@ -7,7 +7,7 @@ def EQ_song(config,file_name):
     settings = []
     download_folder = config["downloaded_folder"]
     processed_folder = config["processed_folder"]
-    eq_settings = ["equalizer=f=10125:width_type=h:width=9875:g=-50"] #-af "equalizer=f=10125:width_type=h:width=9875:g=-50"
+    eq_settings = config["eq"]
 
     # Create the command
     command = [

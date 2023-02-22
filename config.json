@@ -1,5 +1,8 @@
 {
     "downloaded_folder": "./",
     "processed_folder":"./out/",
-    "yt-dlp-path": "./yt-dlp"
+    "yt-dlp-path": "./yt-dlp",
+    "eq":[
+        "equalizer=f=10125:width_type=h:width=9875:g=-50"
+    ]
 }
