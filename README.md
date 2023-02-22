@@ -7,4 +7,16 @@ A script to download music from youtube, automatically convert it to ogg and app
 - python3
 
 ## Installation
-- run: `sudo bash install.bash`
+
+```bash
+apt update
+
+# install ffmpeg
+apt install ffmpeg
+
+# install python3
+apt install python3
+
+# start by making yt-dlp executable
+chmod +x ./yt-dlp
+```
