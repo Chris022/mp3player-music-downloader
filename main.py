@@ -1,8 +1,8 @@
 import json
 import os
 
-import downloader
-import processor
+import src.downloader as downloader
+import src.processor as processor
   
 # Open Config File
 config_f = open('config.json')

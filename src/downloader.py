@@ -1,6 +1,6 @@
 import os
 
-def download_song(config,url,playlist):
+def download_songs(config,url,playlist):
 
     # Path to the executable
     yt_dlp_path = config["yt-dlp-path"]
