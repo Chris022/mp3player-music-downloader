@@ -1,12 +1,15 @@
 import os
 
-def download_song(config,path):
+def download_song(config,url,playlist):
 
     # Path to the executable
     yt_dlp_path = config["yt-dlp-path"]
 
     # Get options for running the downloader
     settings = ["-x","--audio-format mp3", "--embed-metadata", "-o \"%(title)s.mp3\""]
+    # Add the playlist option
+    if playlist:
+        settings.append("--yes-playlist")
     download_path = config["downloaded_folder"]
 
     # Create the command

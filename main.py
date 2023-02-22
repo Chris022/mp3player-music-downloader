@@ -11,7 +11,7 @@ config_f = open('config.json')
 config = json.load(config_f)
 
 # Download a Song
-downloaded_files = downloader.download_song(config, "")
+downloaded_files = downloader.download_songs(config, "",False)
 
 # Get difference between files in downloaded_folder and processed_folder
 # Process all files that are in downloaded_folder but not in processed_folder
