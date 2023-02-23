@@ -20,3 +20,9 @@ apt install python3
 # start by making yt-dlp executable
 chmod +x ./yt-dlp
 ```
+
+## Usage
+
+`python main.py url`
+
+Use the -p option to download playlists
