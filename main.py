@@ -1,8 +1,24 @@
 import json
 import os
+import sys
 
 import src.downloader as downloader
 import src.processor as processor
+
+
+should_download_playlists = False
+url = ""
+if len(sys.argv) < 2:
+    print("ERROR. NO URL GIVEN. Help: python main.py (-p) url")
+    exit(1)
+for i in sys.argv:
+    print(i)
+    if(i == "-p"):
+        should_download_playlists = True
+    else:
+        url = i
+
+
   
 # Open Config File
 config_f = open('config.json')
@@ -11,7 +27,7 @@ config_f = open('config.json')
 config = json.load(config_f)
 
 # Download a Song
-downloaded_files = downloader.download_songs(config, "",False)
+downloaded_files = downloader.download_songs(config, url,should_download_playlists)
 
 # Get difference between files in downloaded_folder and processed_folder
 # Process all files that are in downloaded_folder but not in processed_folder
